@@ -1,0 +1,225 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.header_wraper {
+    display: flex;
+    margin-top: 25px;
+}
+.header_wraper a {
+    text-decoration: none;
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    color: #222222;
+    font-weight: 300;
+    font-family: "Lato";
+    text-align: center;
+    display: flex;
+}
+.header_brand {
+    font-family: Lato;
+    font-size: 27px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: 0.68px;
+    text-align: center;
+    margin-top: 20px;
+    color: #222222;
+    margin-left: 13px;
+}
+.orange_letter {
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Lato";
+    color: #f16d7f;
+    text-align: center;
+}
+.header_form {
+    margin-top: 19px;
+    margin-left: 39px;
+    border: 1px solid #e6e6e6;
+}
+.browse {
+    width: 87px;
+    height: 36px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #222222;
+    font-weight: 300;
+    font-family: "Lato";
+    background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+}
+.header_form input {
+    width: 280px;
+    height: 30px;
+    border: none;
+}
+.header_form ::placeholder {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #a4a4a4;
+    font-weight: 300;
+    font-family: "Lato";
+    
+    
+}
+
+.header_loop {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border: 1px solid#e8e8e8;
+    cursor: pointer;
+    background-color: transparent;
+    color: #a4a4a4;
+    margin-top: -1px;
+}
+
+
+.header_loop:before, .header_loop:after {
+    content:'';
+    height: 9px;
+    display:block;
+    position:absolute;
+    top: 9px;
+    left: 9px;
+}
+
+.header_loop:before {
+    width: 9px;
+    border: 2px #a4a4a4 solid;
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+}
+  
+.header_loop:after {
+    width: 3px;
+    border-radius: 50%;
+    background: #a4a4a4;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    top: 18px;
+    left: 20px;
+}
+.header_buying {
+    margin-left: auto;
+    /* margin-top: 14px; */
+}
+.header_cart {
+    height: 38px;
+    width: 38px;
+    background: none;
+    border: 0;
+    margin-top: 19px;
+}
+.header_acc {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: 0.38px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    margin-left: 26px;
+    margin-top: 13px;
+    position: absolute;
+}
+header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+nav a {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222222;
+}
+nav a:not(:last-of-type) {
+    margin-right: 35px;
+}
+nav a:hover {
+    color: #f16d7f
+}
+.slider_wraper {
+    background: #e8e8e8;
+}
+.slider {
+    background-image: url(../img/slider.png);
+    height: 665px;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-bottom: 98px;
+}
+.slider_brand_up {
+    margin-left: 13px;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #222222;
+    font-family: Lato;
+    position: relative;
+    margin-top: 224px;
+}
+.slider_text {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-weight: 900;
+    font-family: "Lato";
+}
+.slider_line {
+    height: 72px;
+    border-left: 12px solid #f16d7f;
+    margin-top: 229px;
+}
+.hot_deal {
+    display: flex;
+    
+}
+.hot_deal2 {
+    display: flex;
+}
+.HotDealMen {
+    margin-right: 21px;
+}
+.HotDealWomen {
+
+}
+.HotDealAccesories {
+
+}
+.HotDealKids {
+
+}
