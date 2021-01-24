@@ -115,7 +115,7 @@
 }
 .header_buying {
     margin-left: auto;
-    /* margin-top: 14px; */
+    
 }
 .header_cart {
     height: 38px;
@@ -203,4 +203,161 @@ nav a:hover {
     height: 72px;
     border-left: 12px solid #f16d7f;
     margin-top: 229px;
+}
+.hot_deal {
+    display: flex;
+    
+}
+.HotDeal_Left_block {
+    display: block;
+    margin-right: 10px;
+    position: relative;
+}
+.HotDeal_Right_block {
+    display: block;
+    margin-left: 10px;
+    position: relative;
+}
+.HotDeal_Kids, .HotDeal_Accesories {
+    position: relative;
+}
+.HotDeal_Men, .HotDeal_Women {
+    margin-bottom: 20px;
+}
+
+.HotDeal_label_up, .HotDeal_label_down {
+    background-color: #fff;
+    max-width: 189px;
+    position: absolute;
+    top: 25px;
+    padding: 16px 20px;
+}
+
+.HotDeal_Category {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #222222;
+    font-weight: 900;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+.HotDeal_Classes {
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    color: #f16d7f;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 900;
+    font-family: "Lato";
+}
+.featured_items {
+    margin-top: 100px;
+}
+.featured_items_p {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 54px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    display: block
+}
+.featured_items_span {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 54px;
+    color: #9f9f9f;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    
+}
+.featured_items_cards_first_line, .featured_items_cards_second_line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.featured_items_cards_description {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.featured_items_cards_name {
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #222222;
+    text-transform: uppercase;
+}
+.featured_items_cards_price {
+    font-size: 16px;
+    color: #f16d7f;
+    font-weight: 700;
+    font-family: "Lato";
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cards_link {
+    display: block;
+    position: relative;
+}
+.cards_link:before, 
+.cards_link:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.cards_link:after {
+    height: 39px;
+    top: 50%;
+    left: 23%;
+    right: 23%;
+    line-height: 39px !important;
+    text-indent: 30px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Lato';
+    color: #fff;
+    padding: 0px 14px;
+    margin-top: -39px;
+    background: transparent url(../img/hover_cart.png) center left no-repeat;
+    background-position-x: 14px;
+    border: 1px solid #fff;
+    content: 'Add to Cart';
+}
+
+.cards_hover:hover {
+    box-shadow:  0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.cards_link:hover:before, 
+.cards_link:hover:after {
+    opacity: 1;
+}
+
+.cards_img {
+    display: block;
+    border: none;
+}
+.feature_footer {
+    margin-top: 80px;
+    padding: 18px 24px;
+    background-color: #f16d7f;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 41%;
+}
+.feature_arrow {
+    padding-left: 9px;
 }
