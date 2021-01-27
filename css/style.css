@@ -5,6 +5,7 @@
 .header_wraper {
     display: flex;
     margin-top: 25px;
+    align-items: center;
 }
 .header_wraper a {
     text-decoration: none;
@@ -18,7 +19,7 @@
     display: flex;
 }
 .header_brand {
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 27px;
     font-weight: 300;
     font-stretch: normal;
@@ -68,10 +69,7 @@
     color: #a4a4a4;
     font-weight: 300;
     font-family: "Lato";
-    
-    
 }
-
 .header_loop {
     position: absolute;
     width: 38px;
@@ -82,8 +80,6 @@
     color: #a4a4a4;
     margin-top: -1px;
 }
-
-
 .header_loop:before, .header_loop:after {
     content:'';
     height: 9px;
@@ -92,7 +88,6 @@
     top: 9px;
     left: 9px;
 }
-
 .header_loop:before {
     width: 9px;
     border: 2px #a4a4a4 solid;
@@ -100,7 +95,6 @@
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
 }
-  
 .header_loop:after {
     width: 3px;
     border-radius: 50%;
@@ -115,14 +109,17 @@
 }
 .header_buying {
     margin-left: auto;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .header_cart {
     height: 38px;
     width: 38px;
     background: none;
     border: 0;
-    margin-top: 19px;
+    margin-top: 15px;
+    margin-right: 26px;
 }
 .header_acc {
     width: 130px;
@@ -138,9 +135,6 @@
     text-align: center;
     color: #ffffff;
     border: none;
-    margin-left: 26px;
-    margin-top: 13px;
-    position: absolute;
 }
 header {
     padding-bottom: 30px;
@@ -152,11 +146,10 @@ nav {
     margin-top: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    
 }
 nav a {
     text-decoration: none;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: bold;
     font-stretch: normal;
@@ -174,39 +167,54 @@ nav a:hover {
 }
 .slider_wraper {
     background: #e8e8e8;
+    background-image: url(../img/slider.png);
 }
 .slider {
-    background-image: url(../img/slider.png);
+    
     height: 665px;
     display: flex;
     background-repeat: no-repeat;
     margin-bottom: 98px;
 }
 .slider_brand_up {
-    margin-left: 13px;
+    margin-left: 25px;
     font-weight: 900;
-    font-size: 40px;
-    letter-spacing: 1px;
+    font-size: 60px;
+    letter-spacing: 2px;
     color: #222222;
-    font-family: Lato;
+    font-family: 'Lato';
     position: relative;
     margin-top: 224px;
 }
-.slider_text {
+.slider_text, .slider_text-special {
     font-size: 30px;
-    letter-spacing: 1px;
-    line-height: 32px;
+    letter-spacing: 2px;
+    line-height: 40px;
     font-weight: 900;
     font-family: "Lato";
 }
-.slider_line {
-    height: 72px;
-    border-left: 12px solid #f16d7f;
-    margin-top: 229px;
+.slider_text-special {
+    color: #f16d7f;
+}
+.slider_brand_up::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #f16d7f;
+    width: 12px;
+    height: 105px;
+    top: 9px;
+    left: -24px;
+    
+    /*border: 12px solid #f16d7f;
+    /*margin-top: 229px;*/
 }
 .hot_deal {
     display: flex;
     
+}
+.HotDeal_img {
+    display: block;
 }
 .HotDeal_Left_block {
     display: block;
@@ -274,10 +282,14 @@ nav a:hover {
     text-align: center;
     
 }
-.featured_items_cards_first_line, .featured_items_cards_second_line {
+.featured_items_cards_block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 60px;
+}
+.featured_items_cards {
+    width: 261px;
 }
 .featured_items_cards_description {
     padding-top: 20px;
@@ -357,7 +369,241 @@ nav a:hover {
     font-size: 16px;
     font-weight: 600;
     margin-left: 41%;
+    margin-bottom: 113px;
+    border: none;
 }
 .feature_arrow {
     padding-left: 9px;
+}
+
+.offer {
+    display: flex;
+    background-image: url(../img/offer_additional_background.png);
+    background-repeat: no-repeat;
+    height: 529px;
+}
+.offer_main {
+    background-image: url(../img/bottom_offer_girl.png);
+    background-repeat: no-repeat;
+    width: 67%;
+    
+}
+.offer_main_text {
+    padding: 146px 39px;
+    max-width: 293px;
+    font-family: 'Lato';
+    font-size: 54px;
+    font-weight: 700px;
+    color: #ffffff;
+}
+.offer_main_text-special {
+    color: #f16d7f;
+}
+.offer_main_text-low_font {
+    font-size: 32px;
+}
+.offer_additional {
+    margin-left: 114px;
+    margin-top: 55px;
+    width: 283px;
+    
+}
+.offer_additional_title {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    color: #fbfbfb;
+
+
+}
+.offer_additional_title_paragraph{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fbfbfb;
+    font-weight: 300;
+    font-family: 'Lato';
+    width: 219px;
+    margin-top: 17px;
+    
+}
+.offer_additional_title:not(:last-of-type) {
+    margin-bottom: 46px;
+}
+.subscribe {
+    display: flex;
+    background-image: url(../img/subscribe_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+.subscrive-mt-97 {
+    margin-top: 97px;
+}
+
+.subscrive_wrapper {
+    display: flex;
+    height: 438px;
+}
+
+.subscrive_feedback {
+    margin-top: 111px;
+    display: flex;
+    
+}
+.subscribe_feedback_text {
+    max-width: 386px;
+    padding-left: 28px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 26px;
+    color: #222224;
+
+}
+.subscribe_feedback_text_name {
+    font-size: 12px;
+    font-weight: 300;
+    color: #222224;
+    font-family: 'Lato';
+    max-width: 82px;
+    line-height: 1.63;
+    padding-top: 19px;
+}
+.subscribe_feedback_text_name-special {
+    font-size: 16px;
+    line-height: 26px;
+    color: #f16d7f;
+    font-weight: 700;
+}
+.subscrive_feedback_buttons {
+    border: 1px solid #d6d6d6;
+    width: 38px;
+    background-color: #d6d6d6;
+    margin-right: 13px;
+    height: 4px;
+    margin-top: 41px;
+}
+
+.subscrive_feedback_buttons-active {
+    background-color: #f16d7f;
+    border: 1px solid #f16d7f;
+    
+}
+
+.subscribe_confirmation {
+    margin-top: 135px;
+    margin-left: 92px;
+    
+}
+.subscribe_confirmation_text {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #222224;
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.subscribe_confirmation_text-low_font {
+    font-size: 14px;
+    line-height: 1.71;
+}
+.subscribe_confirmation_form {
+    display: flex;
+
+}
+.subscribe_confirmation_email, .subscribe_confirmation_button  {
+    background-color: #e1e1e1;
+    border: none;
+    
+    border-radius: 23px 0 0 23px;
+}
+.subscribe_confirmation_email {
+    padding: 20px 120px 20px 28px; 
+    
+}
+.subscribe_confirmation_button {
+    padding: 20px;
+    background-color: #f16d7f;
+    border-radius: 0 23px 23px 0;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    
+}
+.subscribe_confirmation_email::-webkit-input-placeholder {
+    opacity: 0.67;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    color: #222224;
+}
+.bottom-mt-109 {
+    margin-top: 109px;
+}
+.bottom_wrapper {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.bottom_brand, .bottom_company, .bottom_information, .bottom_shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.brand_logo {
+    text-decoration: none;
+}
+.bottom_brand_info {
+    width: 421px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    color: #898989;
+    line-height: 1.71;
+    padding-top: 41px;
+}
+.bottom_company_title {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.44;
+    letter-spacing: 0.45px;
+    color: #f16d7f;
+    text-transform: uppercase;
+}
+.bottom_company_links {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0;
+    color: #898989;
+}
+.copyright-mt-122 {
+    margin-top: 122px;
+}
+.copyright {
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+}
+.copyright_text {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.63;
+    letter-spacing: 0.4px;
+    text-align: right;
+    color: #7a7a7a;
+    padding: 25px 0
+}
+.copyright_social_links {
+    text-decoration: none;
 }
