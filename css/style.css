@@ -287,10 +287,18 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 60px;
+
 }
+
 .featured_items_cards {
     width: 261px;
+    position: relative;
 }
+
+.featured_items_cards:nth-of-type(-n + 4) {
+    margin-bottom: 20px;
+}
+
 .featured_items_cards_description {
     padding-top: 20px;
     padding-left: 15px;
@@ -314,45 +322,52 @@ nav a:hover {
     display: block;
     position: relative;
 }
-.cards_link:before, 
-.cards_link:after {
-    content: '';
+
+.featured_button {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0;
-}
-
-.cards_link:after {
-    height: 39px;
-    top: 50%;
-    left: 23%;
-    right: 23%;
-    line-height: 39px !important;
-    text-indent: 30px;
+    margin-top: 100px;
+    margin-left: 70px;
+    width: 48%;
+    height: 14%;
+    border: 1px solid #fff;
+    background-image: url(../img/hover_cart.png);
+    background-color: transparent;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-position-x: 14px;
     text-align: center;
+    padding-left: 40px;
     font-size: 13px;
     font-weight: 700;
     font-family: 'Lato';
     color: #fff;
-    padding: 0px 14px;
-    margin-top: -39px;
-    background: transparent url(../img/hover_cart.png) center left no-repeat;
-    background-position-x: 14px;
-    border: 1px solid #fff;
-    content: 'Add to Cart';
 }
 
-.cards_hover:hover {
+
+.featured_items_cards_wrapper {
+    display: block;
+    position: relative;
+}
+.featured_button_wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.featured_cards:hover {
     box-shadow:  0px 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
-
-.cards_link:hover:before, 
-.cards_link:hover:after {
-    opacity: 1;
+.featured_items_cards:hover .featured_button_wrapper {
+    display: flex;
 }
 
 .cards_img {
@@ -605,5 +620,91 @@ nav a:hover {
     padding: 25px 0
 }
 .copyright_social_links {
+    text-decoration: none;
+}
+.head_information {
+    background-color: #f8f3f4;
+}
+
+.head_information_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head_information_description_new {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    padding: 65px 0 65px 0;
+    text-transform: uppercase;
+}
+.text_special {
+    color: #f16d7f !important;  
+}
+.head_information_link {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #636363;
+}
+.side_dropdown {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    text-align: left;
+    position: relative;
+    
+}
+.side_dropdown-mt-60 {
+    margin-top: 60px;
+}
+.side_dropdown_title-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.side_dropdown_title {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 600;
+    color: #6f6e6e;
+    text-transform: uppercase;
+    border-bottom: solid 1px #ebebeb;
+    padding: 14px 0;
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 243px;
+    
+}
+.side_dropdown_title-mb-20 {
+    margin-bottom: 20px;
+}
+.side_dropdown_title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 44px;
+    background-color: #ef5b70;
+    top: 0;
+    left: 0;
+}
+.side_dropdown_triangle {
+    width: 9px;
+    height: 6px;
+    /*margin-left: 165px;*/
+    
+   
+}
+.side_dropdown_subtitle {
+    padding: 22px 0 10px 17px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f6e6e;
     text-decoration: none;
 }
