@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header class="header_wraper container">
+        <a class="header_logo_link" href="/">
+        <img class="header_logo_img" src="./img/logo.png" alt="logo">
+        <div class="header_brand_wrapper"> <span class="header_brand">BRAN<span class="orange_letter">D</span></span></div>
+        </a>
+        <form class="header_form" action="#">
+            <button class="browse">Browse</button><input type="text" placeholder="Search for item..."><button class="header_loop"></button>
+        </form>
+        <div class="header_buying">
+            <button class="header_cart"><img src="./img/cart.png"></button>
+            <button class="header_acc">My account</button>
+        </div>
+    </header>
+    <nav class="header_navigation">
+        <a class="header_nav_link " href="./Index.html">HOME</a>
+        <a class="header_nav_link" href="./product.html">MAN</a>
+        <a class="header_nav_link header_nav_active" href="#">WOMEN</a>
+        <a class="header_nav_link" href="#">KIDS</a>
+        <a class="header_nav_link" href="#">Accoseriese</a>
+        <a class="header_nav_link" href="#">Featured</a>
+        <a class="header_nav_link" href="#">Hot Deals</a>
+    </nav>
+    <div class="head_information">
+        <div class="head_information_description container">
+            <p class="head_information_description_new text_special">New Arrivals</p>
+            <div class="head_information_nav">    
+                <a href="./Index.html" class="head_information_link">home</a>/<a href="./product.html" class="head_information_link">men</a>/<a href="#" class="head_information_link text_special text_bold">new arrivals</a>
+            </div>    
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkout mt-90">
+            <input class="checkout_title-toggle" type="checkbox" id="address">
+            <label for="address" class="checkout_title">
+                01.   Shipping Adress
+            </label>
+            <div class="checkout-wrapper">
+                <div class="checkout_item checkout_item_mr-260">
+                    <form class="checkout_item_form" action="#" >
+                        <h3 class="checkout_item_title">
+                            Check as a guest or register
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="guest"><span class="checkout_item_title">checkout as guest</span>
+                        </div>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="register"><span class="checkout_item_title">register</span>
+                        </div>
+                        <h3 class="checkout_item_title">
+                            Register and save time!
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <span class="checkout_item_text">
+                            &raquo; Fast and easy checkout
+                        </span>
+                        <span class="checkout_item_text mb-24">
+                            &raquo; Easy access to your order history and status
+                        </span>
+                        <button class="checkout_item_button">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout_item">
+                    <h3 class="checkout_item_title">
+                        Already registed?
+                    </h3>
+                    <span class="checkout_item_text">
+                        Please log in below
+                    </span>
+                    <form class="checkout_item_form" action="#" >
+                        <span class="checkout_item_title checkout_item_title-registration">EMAIL ADDRESS<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_email" type="email" name="email" required id="checkout_item_email">
+                        <span class="checkout_item_title checkout_item_title-registration">PASSWORD<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_password" type="password" name="password" required id="checkout_item_password">
+                        <span class="checkout_item_text checkout_item_special checkout_item_text-registration">* Required Fileds</span>
+                        <button class="checkout_item_button">Log In</button> <a href="#" class="checkout_item_passrestore">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <input class="checkout_title-toggle" type="checkbox" id="billing">
+            <label for="billing" class="checkout_title">
+                02.   BILLING INFORMATION
+            </label>
+            <div class="checkout-wrapper">
+                <div class="checkout_item checkout_item_mr-260">
+                    <form class="checkout_item_form" action="#" >
+                        <h3 class="checkout_item_title">
+                            Check as a guest or register
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="guest"><span class="checkout_item_title">checkout as guest</span>
+                        </div>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="register"><span class="checkout_item_title">register</span>
+                        </div>
+                        <h3 class="checkout_item_title">
+                            Register and save time!
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <span class="checkout_item_text">
+                            &raquo; Fast and easy checkout
+                        </span>
+                        <span class="checkout_item_text mb-24">
+                            &raquo; Easy access to your order history and status
+                        </span>
+                        <button class="checkout_item_button">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout_item">
+                    <h3 class="checkout_item_title">
+                        Already registed?
+                    </h3>
+                    <span class="checkout_item_text">
+                        Please log in below
+                    </span>
+                    <form class="checkout_item_form" action="#" >
+                        <span class="checkout_item_title checkout_item_title-registration">EMAIL ADDRESS<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_email" type="email" name="email" required id="checkout_item_email">
+                        <span class="checkout_item_title checkout_item_title-registration">PASSWORD<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_password" type="password" name="password" required id="checkout_item_password">
+                        <span class="checkout_item_text checkout_item_special checkout_item_text-registration">* Required Fileds</span>
+                        <button class="checkout_item_button">Log In</button> <a href="#" class="checkout_item_passrestore">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <input class="checkout_title-toggle" type="checkbox" id="information">
+            <label for="information" class="checkout_title">
+                03.   SHIPPING INFORMATION
+            </label>
+            <div class="checkout-wrapper">
+                <div class="checkout_item checkout_item_mr-260">
+                    <form class="checkout_item_form" action="#" >
+                        <h3 class="checkout_item_title">
+                            Check as a guest or register
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="guest"><span class="checkout_item_title">checkout as guest</span>
+                        </div>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="register"><span class="checkout_item_title">register</span>
+                        </div>
+                        <h3 class="checkout_item_title">
+                            Register and save time!
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <span class="checkout_item_text">
+                            &raquo; Fast and easy checkout
+                        </span>
+                        <span class="checkout_item_text mb-24">
+                            &raquo; Easy access to your order history and status
+                        </span>
+                        <button class="checkout_item_button">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout_item">
+                    <h3 class="checkout_item_title">
+                        Already registed?
+                    </h3>
+                    <span class="checkout_item_text">
+                        Please log in below
+                    </span>
+                    <form class="checkout_item_form" action="#" >
+                        <span class="checkout_item_title checkout_item_title-registration">EMAIL ADDRESS<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_email" type="email" name="email" required id="checkout_item_email">
+                        <span class="checkout_item_title checkout_item_title-registration">PASSWORD<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_password" type="password" name="password" required id="checkout_item_password">
+                        <span class="checkout_item_text checkout_item_special checkout_item_text-registration">* Required Fileds</span>
+                        <button class="checkout_item_button">Log In</button> <a href="#" class="checkout_item_passrestore">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <input class="checkout_title-toggle" type="checkbox" id="method">
+            <label for="method" class="checkout_title">
+                04.   SHIPPING METHOD
+            </label>
+            <div class="checkout-wrapper">
+                <div class="checkout_item checkout_item_mr-260">
+                    <form class="checkout_item_form" action="#" >
+                        <h3 class="checkout_item_title">
+                            Check as a guest or register
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="guest"><span class="checkout_item_title">checkout as guest</span>
+                        </div>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="register"><span class="checkout_item_title">register</span>
+                        </div>
+                        <h3 class="checkout_item_title">
+                            Register and save time!
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <span class="checkout_item_text">
+                            &raquo; Fast and easy checkout
+                        </span>
+                        <span class="checkout_item_text mb-24">
+                            &raquo; Easy access to your order history and status
+                        </span>
+                        <button class="checkout_item_button">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout_item">
+                    <h3 class="checkout_item_title">
+                        Already registed?
+                    </h3>
+                    <span class="checkout_item_text">
+                        Please log in below
+                    </span>
+                    <form class="checkout_item_form" action="#" >
+                        <span class="checkout_item_title checkout_item_title-registration">EMAIL ADDRESS<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_email" type="email" name="email" required id="checkout_item_email">
+                        <span class="checkout_item_title checkout_item_title-registration">PASSWORD<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_password" type="password" name="password" required id="checkout_item_password">
+                        <span class="checkout_item_text checkout_item_special checkout_item_text-registration">* Required Fileds</span>
+                        <button class="checkout_item_button">Log In</button> <a href="#" class="checkout_item_passrestore">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <input class="checkout_title-toggle" type="checkbox" id="payment">
+            <label for="payment" class="checkout_title">
+                05.   PAYMENT METHOD
+            </label>
+            <div class="checkout-wrapper">
+                <div class="checkout_item checkout_item_mr-260">
+                    <form class="checkout_item_form" action="#" >
+                        <h3 class="checkout_item_title">
+                            Check as a guest or register
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="guest"><span class="checkout_item_title">checkout as guest</span>
+                        </div>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="register"><span class="checkout_item_title">register</span>
+                        </div>
+                        <h3 class="checkout_item_title">
+                            Register and save time!
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <span class="checkout_item_text">
+                            &raquo; Fast and easy checkout
+                        </span>
+                        <span class="checkout_item_text mb-24">
+                            &raquo; Easy access to your order history and status
+                        </span>
+                        <button class="checkout_item_button">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout_item">
+                    <h3 class="checkout_item_title">
+                        Already registed?
+                    </h3>
+                    <span class="checkout_item_text">
+                        Please log in below
+                    </span>
+                    <form class="checkout_item_form" action="#" >
+                        <span class="checkout_item_title checkout_item_title-registration">EMAIL ADDRESS<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_email" type="email" name="email" required id="checkout_item_email">
+                        <span class="checkout_item_title checkout_item_title-registration">PASSWORD<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_password" type="password" name="password" required id="checkout_item_password">
+                        <span class="checkout_item_text checkout_item_special checkout_item_text-registration">* Required Fileds</span>
+                        <button class="checkout_item_button">Log In</button> <a href="#" class="checkout_item_passrestore">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <input class="checkout_title-toggle" type="checkbox" id="order">
+            <label for="order" class="checkout_title">
+                06.   ORDER REVIEW
+            </label>
+            <div class="checkout-wrapper">
+                <div class="checkout_item checkout_item_mr-260">
+                    <form class="checkout_item_form" action="#" >
+                        <h3 class="checkout_item_title">
+                            Check as a guest or register
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="guest"><span class="checkout_item_title">checkout as guest</span>
+                        </div>
+                        <div class="checkout_item_radio-wrapper">
+                            <input class="checkout_item_radio" type="radio" name="user" value="register"><span class="checkout_item_title">register</span>
+                        </div>
+                        <h3 class="checkout_item_title">
+                            Register and save time!
+                        </h3>
+                        <span class="checkout_item_text mb-24">
+                            Register with us for future convenience
+                        </span>
+                        <span class="checkout_item_text">
+                            &raquo; Fast and easy checkout
+                        </span>
+                        <span class="checkout_item_text mb-24">
+                            &raquo; Easy access to your order history and status
+                        </span>
+                        <button class="checkout_item_button">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout_item">
+                    <h3 class="checkout_item_title">
+                        Already registed?
+                    </h3>
+                    <span class="checkout_item_text">
+                        Please log in below
+                    </span>
+                    <form class="checkout_item_form" action="#" >
+                        <span class="checkout_item_title checkout_item_title-registration">EMAIL ADDRESS<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_email" type="email" name="email" required id="checkout_item_email">
+                        <span class="checkout_item_title checkout_item_title-registration">PASSWORD<span class="checkout_item_special">*</span></span>
+                        <input class="checkout_item_password" type="password" name="password" required id="checkout_item_password">
+                        <span class="checkout_item_text checkout_item_special checkout_item_text-registration">* Required Fileds</span>
+                        <button class="checkout_item_button">Log In</button> <a href="#" class="checkout_item_passrestore">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe subscribe-mt-97">
+        <div class="container subscribe_wrapper">
+            <figure class="subscribe_feedback">
+                <img class="subscribe_feedback_face" src="./img/subscribe_face.png" width="83" height="83" alt="">
+                <figcaption class="subscribe_feedback_text">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                    <p class="subscribe_feedback_text_name">
+                    <span class="subscribe_feedback_text_name-special">Bin Burhan</span>
+                        Dhaka, Bd
+                    </p>
+                    <button class="subscribe_feedback_buttons"></button>
+                    <button class="subscribe_feedback_buttons subscribe_feedback_buttons-active"></button>
+                    <button class="subscribe_feedback_buttons"></button>
+                </figcaption>
+            </figure>
+            <div class="subscribe_confirmation">
+                <h3 class="subscribe_confirmation_text">
+                    Subscribe 
+                    <p class="subscribe_confirmation_text-low_font">FOR OUR NEWLETTER AND PROMOTION</p> 
+                </h3>
+                <form class="subscribe_confirmation_form" action="#" >
+                    <input class="subscribe_confirmation_email" type="email" name="" id="" placeholder="Enter Your Email"><input class="subscribe_confirmation_button" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container bottom-mt-109 bottom_wrapper">
+        <div class="bottom_brand">
+            <a class="brand_logo" href="/">
+                <img src="./img/logo.png" alt="logo">
+                <span class="header_brand">BRAN<span class="orange_letter">D</span></span>    
+            </a>
+            <p class="bottom_brand_info">
+                Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+            </p>             
+            <p class="bottom_brand_info">
+                Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            </p>
+        </div>
+        <div class="bottom_company">
+            <p class="bottom_company_title">company</p>
+            <a href="./Index.html" class="bottom_company_links">Home</a>
+            <a href="#" class="bottom_company_links">Shop</a>
+            <a href="#" class="bottom_company_links">About</a>
+            <a href="#" class="bottom_company_links">How It Works</a>
+            <a href="#" class="bottom_company_links">Contact</a>
+        </div>
+        <div class="bottom_information">
+            <p class="bottom_company_title">information</p>
+            <a href="#" class="bottom_company_links">Tearms & Condition</a>
+            <a href="#" class="bottom_company_links">Privacy Policy</a>
+            <a href="#" class="bottom_company_links">How to Buy</a>
+            <a href="#" class="bottom_company_links">How to Sell</a>
+            <a href="#" class="bottom_company_links">Promotion</a>
+        </div>
+        <div class="bottom_shop">
+            <p class="bottom_company_title">shop category</p>
+            <a href="#" class="bottom_company_links">Men</a>
+            <a href="#" class="bottom_company_links">Women</a>
+            <a href="#" class="bottom_company_links">Child</a>
+            <a href="#" class="bottom_company_links">Apparel</a>
+            <a href="#" class="bottom_company_links">Brows All</a>
+        </div>
+    </div>
+    <div class="copyright copyright-mt-122">
+        <span class="copyright_text">
+            © 2017  Brand  All Rights Reserved.
+        </span>
+        <div class="copyright_social">
+            <a href="#" class="copyright_social_links">
+                <img src="./img/social_F.png" alt="">
+            </a>
+            <a href="#" class="copyright_social_links">
+                <img src="./img/social_tweet.png" alt="">
+            </a>
+            <a href="#" class="copyright_social_links">
+                <img src="./img/Social_In.png" alt="">
+            </a>
+            <a href="#" class="copyright_social_links">
+                <img src="./img/social_P.png" alt="">
+            </a>
+            <a href="#" class="copyright_social_links">
+                <img src="./img/social_G.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

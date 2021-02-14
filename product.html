@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Product</title>
+</head>
+<body>
+    <header class="header_wraper container">
+        <a class="header_logo_link" href="/">
+        <img class="header_logo_img" src="./img/logo.png" alt="logo">
+        <div class="header_brand_wrapper"> <span class="header_brand">BRAN<span class="orange_letter">D</span></span></div>
+        </a>
+        <form class="header_form" action="#">
+            <button class="browse">Browse</button><input type="text" placeholder="Search for item..."><button class="header_loop"></button>
+        </form>
+        <div class="header_buying">
+            <button class="header_cart"><img src="./img/cart.png"></button>
+            <button class="header_acc">My account</button>
+        </div>
+    </header>
+    <nav class="header_navigation">
+        <a class="header_nav_link" href="./Index.html">HOME</a>
+        <a class="header_nav_link header_nav_active" href="#">MAN</a>
+        <a class="header_nav_link" href="./Checkout.html">WOMEN</a>
+        <a class="header_nav_link" href="#">KIDS</a>
+        <a class="header_nav_link" href="#">Accoseriese</a>
+        <a class="header_nav_link" href="#">Featured</a>
+        <a class="header_nav_link" href="#">Hot Deals</a>
+    </nav>
+    <div class="head_information">
+        <div class="head_information_description container">
+            <p class="head_information_description_new text_special">New Arrivals</p>
+            <div class="head_information_nav">    
+                <a href="./Index.html" class="head_information_link">home</a>/<a href="./product.html" class="head_information_link">men</a>/<a href="#" class="head_information_link text_special text_bold">new arrivals</a>
+            </div>    
+        </div>
+    </div>
+    <div class="container product_main">
+        <div class="side_dropdown side_dropdown-mt-60">
+            <div class="side_dropdown_title-wrapper side_dropdown_title-mb-20"> 
+                <input class="side_dropdown_title-toggle" type="checkbox" id="category">
+                <label for="category" class="side_dropdown_title">
+                    Category
+                </label>
+                <div class="side_dropdown_nav">
+                    <a class="side_dropdown_nav-item" href="#">Accessories</a>
+                    <a class="side_dropdown_nav-item" href="#">Bags</a>
+                    <a class="side_dropdown_nav-item" href="#">Denim</a>
+                    <a class="side_dropdown_nav-item" href="#">Hoodies & Sweatshirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Jackets & Coats</a>
+                    <a class="side_dropdown_nav-item" href="#">Pants</a>
+                    <a class="side_dropdown_nav-item" href="#">Polos</a>
+                    <a class="side_dropdown_nav-item" href="#">Shirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Shoes</a>
+                    <a class="side_dropdown_nav-item" href="#">Shorts</a>
+                    <a class="side_dropdown_nav-item" href="#">Sweaters & Knits</a>
+                    <a class="side_dropdown_nav-item" href="#">T-Shirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Tanks</a>
+                </div>
+            </div>
+            <div class="side_dropdown_title-wrapper side_dropdown_title-mb-20"> 
+                <input class="side_dropdown_title-toggle" type="checkbox" id="brand">
+                <label for="brand" class="side_dropdown_title">
+                    brand
+                </label>
+                <div class="side_dropdown_nav">
+                    <a class="side_dropdown_nav-item" href="#">Accessories</a>
+                    <a class="side_dropdown_nav-item" href="#">Bags</a>
+                    <a class="side_dropdown_nav-item" href="#">Denim</a>
+                    <a class="side_dropdown_nav-item" href="#">Hoodies & Sweatshirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Jackets & Coats</a>
+                    <a class="side_dropdown_nav-item" href="#">Pants</a>
+                    <a class="side_dropdown_nav-item" href="#">Polos</a>
+                    <a class="side_dropdown_nav-item" href="#">Shirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Shoes</a>
+                    <a class="side_dropdown_nav-item" href="#">Shorts</a>
+                    <a class="side_dropdown_nav-item" href="#">Sweaters & Knits</a>
+                    <a class="side_dropdown_nav-item" href="#">T-Shirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Tanks</a>
+                </div>
+            </div>
+            <div class="side_dropdown_title-wrapper side_dropdown_title-mb-20"> 
+                <input class="side_dropdown_title-toggle" type="checkbox" id="designer">
+                <label for="designer" class="side_dropdown_title">
+                    designer
+                </label>
+                <div class="side_dropdown_nav">
+                    <a class="side_dropdown_nav-item" href="#">Accessories</a>
+                    <a class="side_dropdown_nav-item" href="#">Bags</a>
+                    <a class="side_dropdown_nav-item" href="#">Denim</a>
+                    <a class="side_dropdown_nav-item" href="#">Hoodies & Sweatshirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Jackets & Coats</a>
+                    <a class="side_dropdown_nav-item" href="#">Pants</a>
+                    <a class="side_dropdown_nav-item" href="#">Polos</a>
+                    <a class="side_dropdown_nav-item" href="#">Shirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Shoes</a>
+                    <a class="side_dropdown_nav-item" href="#">Shorts</a>
+                    <a class="side_dropdown_nav-item" href="#">Sweaters & Knits</a>
+                    <a class="side_dropdown_nav-item" href="#">T-Shirts</a>
+                    <a class="side_dropdown_nav-item" href="#">Tanks</a>
+                </div>
+            </div>
+        </div>
+        <div class="goods">
+            <div class="goods_filters">
+                <div class="goods_trending ">
+                    <p class="goods_trending_label side_dropdown_title-mb-20">Trending now</p>
+                    <span class="goods_trending-item">Bohemian |</span>
+                    <span class="goods_trending-item">Floral |</span>
+                    <span class="goods_trending-item">Lace</span>
+                    <span class="goods_trending-item">Floral |</span>
+                    <span class="goods_trending-item">Lace |</span>
+                    <span class="goods_trending-item">Bohemian </span>
+                </div>
+                <div class="goods_size">
+                    <p class="goods_trending_label side_dropdown_title-mb-20">Size</p>
+                    <input type="checkbox" name="" id="xxs" class="goods_size_item"><label for="xxs" class="goods_size_value">XXS </label>
+                    <input type="checkbox" name="" id="xs" class="goods_size_item"><label for="xs" class="goods_size_value">XS</label>
+                    <input type="checkbox" name="" id="s" class="goods_size_item"><label for="s" class="goods_size_value">S</label>
+                    <input type="checkbox" name="" id="m" class="goods_size_item"><label for="m" class="goods_size_value">M</label>
+                    <input type="checkbox" name="" id="l" class="goods_size_item"><label for="l" class="goods_size_value">L</label>
+                    <input type="checkbox" name="" id="xl" class="goods_size_item"><label for="xl" class="goods_size_value">XL</label>
+                    <input type="checkbox" name="" id="xxl" class="goods_size_item"><label for="xxl" class="goods_size_value">XXL</label>
+                </div>
+                <div class="goods_price">
+                    <p class="goods_trending_label border_bottom">Price</p>
+                    <p class="goods_price_band"></p>
+                    <p class="goods_price_band-ball_left"></p>
+                    <p class="goods_price_band-ball_right"></p>
+                    <span class="goods_price_lowest">50$</span> <span class="goods_price_highest">400$</span>
+                </div>
+            </div>
+            <div class="goods_sorting">
+                <div class="goods_sorting_byclass">
+                    <span class="goods_sorting_label">Sort By</span><span class="goods_sorting_class">Name</span>
+                </div>
+                <div class="goods_sorting_quantity"> 
+                    <span class="goods_sorting_label">Show</span><span class="goods_sorting_class">9</span>
+                </div>
+            </div>
+            <div class="product-wrapper cards-mb-40">
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_1.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_2.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_3.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_1.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_2.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_3.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_1.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_2.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_3.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
+                    </div>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+            </div>
+        
+            <div class="product_pagination">
+                <div class="pagination">
+                    <a class="product_pagination_link" href="#">&laquo;</a>
+                    <a class="product_pagination_link product_pagination_link-active" href="#">1</a>
+                    <a class="product_pagination_link" href="#">2</a>
+                    <a class="product_pagination_link" href="#">3</a>
+                    <a class="product_pagination_link" href="#">4</a>
+                    <a class="product_pagination_link" href="#">5</a>
+                    <a class="product_pagination_link" href="#">6</a>
+                    <a class="product_pagination_link" href="#">.....</a>
+                    <a class="product_pagination_link" href="#">20</a>
+                    <a class="product_pagination_link" href="#">&raquo;</a>
+                </div>
+                <button class="product_pagination_button">View All</button>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="advantages_item">
+            <h3 class="advantages_item_title advantages_item_title-delivery">
+                Free Delivery
+            </h3>
+            <p class="advantages_item_description ">
+                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            </p>
+        </div>
+        <div class="advantages_item">
+            <h3 class="advantages_item_title advantages_item_title-sales">
+                Sales & discounts
+            </h3>
+            <p class="advantages_item_description">
+                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            </p>
+        </div>
+        <div class="advantages_item">
+            <h3 class="advantages_item_title advantages_item_title-quality">
+                Quality assurance
+            </h3>
+            <p class="advantages_item_description">
+                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            </p>
+        </div>
+    </div>
+    <div class="subscribe subscribe-mt-97">
+    <div class="container subscribe_wrapper">
+        <figure class="subscribe_feedback">
+            <img class="subscribe_feedback_face" src="./img/subscribe_face.png" width="83" height="83" alt="">
+            <figcaption class="subscribe_feedback_text">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                <p class="subscribe_feedback_text_name">
+                <span class="subscribe_feedback_text_name-special">Bin Burhan</span>
+                    Dhaka, Bd
+                </p>
+                <button class="subscribe_feedback_buttons"></button>
+                <button class="subscribe_feedback_buttons subscribe_feedback_buttons-active"></button>
+                <button class="subscribe_feedback_buttons"></button>
+            </figcaption>
+        </figure>
+        <div class="subscribe_confirmation">
+            <h3 class="subscribe_confirmation_text">
+                Subscribe 
+                <p class="subscribe_confirmation_text-low_font">FOR OUR NEWLETTER AND PROMOTION</p> 
+            </h3>
+            <form class="subscribe_confirmation_form" action="#" >
+                <input class="subscribe_confirmation_email" type="email" name="" id="" placeholder="Enter Your Email"><input class="subscribe_confirmation_button" type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container bottom-mt-109 bottom_wrapper">
+    <div class="bottom_brand">
+        <a class="brand_logo" href="/">
+            <img src="./img/logo.png" alt="logo">
+            <span class="header_brand">BRAN<span class="orange_letter">D</span></span>    
+        </a>
+        <p class="bottom_brand_info">
+            Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+        </p>             
+        <p class="bottom_brand_info">
+            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+        </p>
+    </div>
+    <div class="bottom_company">
+        <p class="bottom_company_title">company</p>
+        <a href="./Index.html" class="bottom_company_links">Home</a>
+        <a href="#" class="bottom_company_links">Shop</a>
+        <a href="#" class="bottom_company_links">About</a>
+        <a href="#" class="bottom_company_links">How It Works</a>
+        <a href="#" class="bottom_company_links">Contact</a>
+    </div>
+    <div class="bottom_information">
+        <p class="bottom_company_title">information</p>
+        <a href="#" class="bottom_company_links">Tearms & Condition</a>
+        <a href="#" class="bottom_company_links">Privacy Policy</a>
+        <a href="#" class="bottom_company_links">How to Buy</a>
+        <a href="#" class="bottom_company_links">How to Sell</a>
+        <a href="#" class="bottom_company_links">Promotion</a>
+    </div>
+    <div class="bottom_shop">
+        <p class="bottom_company_title">shop category</p>
+        <a href="#" class="bottom_company_links">Men</a>
+        <a href="#" class="bottom_company_links">Women</a>
+        <a href="#" class="bottom_company_links">Child</a>
+        <a href="#" class="bottom_company_links">Apparel</a>
+        <a href="#" class="bottom_company_links">Brows All</a>
+    </div>
+</div>
+<div class="copyright copyright-mt-122">
+    <span class="copyright_text">
+        © 2017  Brand  All Rights Reserved.
+    </span>
+    <div class="copyright_social">
+        <a href="#" class="copyright_social_links">
+            <img src="./img/social_F.png" alt="">
+        </a>
+        <a href="#" class="copyright_social_links">
+            <img src="./img/social_tweet.png" alt="">
+        </a>
+        <a href="#" class="copyright_social_links">
+            <img src="./img/Social_In.png" alt="">
+        </a>
+        <a href="#" class="copyright_social_links">
+            <img src="./img/social_P.png" alt="">
+        </a>
+        <a href="#" class="copyright_social_links">
+            <img src="./img/social_G.png" alt="">
+        </a>
+    </div>
+</div>
+</body> 
+</html>
