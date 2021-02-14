@@ -11,19 +11,17 @@
     <title>Product</title>
 </head>
 <body>
-    <header>
-        <div class="header_wraper container">
-            <a href="/">
-            <img src="./img/logo.png" alt="logo">
-            <span class="header_brand">BRAN<span class="orange_letter">D</span></span>    
-            </a>
-            <form class="header_form" action="#">
-                <button class="browse">Browse</button><input type="text" placeholder="Search for item..."><button class="header_loop"></button>
-            </form>
-            <div class="header_buying">
-                <button class="header_cart"><img src="./img/cart.png"></button>
-                <button class="header_acc">My account</button>
-            </div>
+    <header class="header_wraper container">
+        <a class="header_logo_link" href="/">
+        <img class="header_logo_img" src="./img/logo.png" alt="logo">
+        <div class="header_brand_wrapper"> <span class="header_brand">BRAN<span class="orange_letter">D</span></span></div>
+        </a>
+        <form class="header_form" action="#">
+            <button class="browse">Browse</button><input type="text" placeholder="Search for item..."><button class="header_loop"></button>
+        </form>
+        <div class="header_buying">
+            <button class="header_cart"><img src="./img/cart.png"></button>
+            <button class="header_acc">My account</button>
         </div>
     </header>
     <nav class="header_navigation">
@@ -110,31 +108,33 @@
             </div>
         </div>
         <div class="goods">
-            <div class="goods_trending ">
-                <p class="goods_trending_label side_dropdown_title-mb-20">Trending now</p>
-                <span class="goods_trending-item">Bohemian |</span>
-                <span class="goods_trending-item">Floral |</span>
-                <span class="goods_trending-item">Lace</span>
-                <span class="goods_trending-item">Floral |</span>
-                <span class="goods_trending-item">Lace |</span>
-                <span class="goods_trending-item">Bohemian </span>
-            </div>
-            <div class="goods_size">
-                <p class="goods_trending_label side_dropdown_title-mb-20">Size</p>
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">XXS</span> 
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">XS</span>
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">S</span>
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">M</span>
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">L</span>
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">XL</span>
-                <input type="checkbox" name="" id="" class="goods_size_item"><span class="goods_size_value">XXL</span>
-            </div>
-            <div class="goods_price">
-                <p class="goods_trending_label border_bottom">Price</p>
-                <p class="goods_price_band"></p>
-                <p class="goods_price_band-ball_left"></p>
-                <p class="goods_price_band-ball_right"></p>
-                <span class="goods_price_lowest">50$</span> <span class="goods_price_highest">400$</span>
+            <div class="goods_filters">
+                <div class="goods_trending ">
+                    <p class="goods_trending_label side_dropdown_title-mb-20">Trending now</p>
+                    <span class="goods_trending-item">Bohemian |</span>
+                    <span class="goods_trending-item">Floral |</span>
+                    <span class="goods_trending-item">Lace</span>
+                    <span class="goods_trending-item">Floral |</span>
+                    <span class="goods_trending-item">Lace |</span>
+                    <span class="goods_trending-item">Bohemian </span>
+                </div>
+                <div class="goods_size">
+                    <p class="goods_trending_label side_dropdown_title-mb-20">Size</p>
+                    <input type="checkbox" name="" id="xxs" class="goods_size_item"><label for="xxs" class="goods_size_value">XXS </label>
+                    <input type="checkbox" name="" id="xs" class="goods_size_item"><label for="xs" class="goods_size_value">XS</label>
+                    <input type="checkbox" name="" id="s" class="goods_size_item"><label for="s" class="goods_size_value">S</label>
+                    <input type="checkbox" name="" id="m" class="goods_size_item"><label for="m" class="goods_size_value">M</label>
+                    <input type="checkbox" name="" id="l" class="goods_size_item"><label for="l" class="goods_size_value">L</label>
+                    <input type="checkbox" name="" id="xl" class="goods_size_item"><label for="xl" class="goods_size_value">XL</label>
+                    <input type="checkbox" name="" id="xxl" class="goods_size_item"><label for="xxl" class="goods_size_value">XXL</label>
+                </div>
+                <div class="goods_price">
+                    <p class="goods_trending_label border_bottom">Price</p>
+                    <p class="goods_price_band"></p>
+                    <p class="goods_price_band-ball_left"></p>
+                    <p class="goods_price_band-ball_right"></p>
+                    <span class="goods_price_lowest">50$</span> <span class="goods_price_highest">400$</span>
+                </div>
             </div>
             <div class="goods_sorting">
                 <div class="goods_sorting_byclass">
@@ -145,169 +145,134 @@
                 </div>
             </div>
             <div class="product-wrapper cards-mb-40">
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_1.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_1.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_2.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_2.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_3.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 1_3.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_1.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                    <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_1.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>  
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_2.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_2.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_3.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 2_3.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>  
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-35">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_1.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_1.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action cards-mb-40">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_2.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_2.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="cards_hover">
-                    <div class="featured_cards featured_cards_action ">
-                        <figure class="featured_items_cards">
-                            <div class="featured_items_cards_wrapper">
-                                <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_3.png" alt=""></a>
-                                <div class="featured_button_wrapper">
-                                    <button class="featured_button">Add to Cart</button>
-                                    <button class="featured_button_repeat"></button>
-                                    <button class="featured_button_favorite"></button>
-                                </div>
-                            </div>
-                            <figcaption class="featured_items_cards_description">
-                                <span class="featured_items_cards_name">Mango People T-shirt</span>
-                                <p class="featured_items_cards_price">$52.00</p>
-                            </figcaption>
-                        </figure>
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="featured_items_cards featured_cards featured_cards_action cards-mb-35 cards_hover">
+                    <div class="featured_items_cards_wrapper">
+                        <a class="cards_link" href="#"><img class="cards_img" src="./img/product 3_3.png" alt=""></a>
+                        <div class="featured_button_wrapper">
+                            <button class="featured_button">Add to Cart</button>
+                            <button class="featured_button_repeat"></button>
+                            <button class="featured_button_favorite"></button>
+                        </div>
                     </div>
-                </div>    
+                    <figcaption class="featured_items_cards_description">
+                        <span class="featured_items_cards_name">Mango People T-shirt</span>
+                        <p class="featured_items_cards_price">$52.00</p>
+                    </figcaption>
+                </figure>
             </div>
+        
             <div class="product_pagination">
                 <div class="pagination">
                     <a class="product_pagination_link" href="#">&laquo;</a>

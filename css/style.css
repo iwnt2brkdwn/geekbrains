@@ -1,3 +1,6 @@
+.body {
+    font-family: 'Lato';
+}
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -7,7 +10,7 @@
     margin-top: 25px;
     align-items: center;
 }
-.header_wraper a {
+.header_logo_link {
     text-decoration: none;
     font-size: 27px;
     letter-spacing: 1px;
@@ -18,6 +21,14 @@
     text-align: center;
     display: flex;
 }
+.header_logo_img {
+    display: block;
+    padding-right: 10px;
+}
+.header_brand_wrapper {
+    display: flex;
+    align-items: center;
+}
 .header_brand {
     font-family: 'Lato';
     font-size: 27px;
@@ -27,9 +38,7 @@
     line-height: 1.19;
     letter-spacing: 0.68px;
     text-align: center;
-    margin-top: 20px;
     color: #222222;
-    margin-left: 13px;
 }
 .orange_letter {
     font-size: 27px;
@@ -41,13 +50,13 @@
     text-align: center;
 }
 .header_form {
-    margin-top: 19px;
     margin-left: 39px;
     border: 1px solid #e6e6e6;
+    display: flex;
+    align-items: stretch;
 }
 .browse {
     width: 87px;
-    height: 36px;
     border: none;
     font-size: 14px;
     letter-spacing: 0px;
@@ -59,7 +68,6 @@
 }
 .header_form input {
     width: 280px;
-    height: 30px;
     border: none;
 }
 .header_form ::placeholder {
@@ -71,22 +79,19 @@
     font-family: "Lato";
 }
 .header_loop {
-    position: absolute;
-    width: 38px;
-    height: 38px;
+    position: relative;
     border: 1px solid#e8e8e8;
     cursor: pointer;
     background-color: transparent;
     color: #a4a4a4;
     margin-top: -1px;
+    margin-right: -1px;
+    margin-bottom: -1px;
 }
 .header_loop:before, .header_loop:after {
     content:'';
     height: 9px;
     display:block;
-    position:absolute;
-    top: 9px;
-    left: 9px;
 }
 .header_loop:before {
     width: 9px;
@@ -104,8 +109,8 @@
     -moz-transform:rotate(-45deg);
     -o-transform:rotate(-45deg);
     -ms-transform:rotate(-45deg);
-    top: 18px;
-    left: 20px;
+    margin-top: -3px;
+    margin-left: 12px;
 }
 .header_buying {
     margin-left: auto;
@@ -172,7 +177,6 @@ header {
     background-image: url(../img/slider.png);
 }
 .slider {
-    
     height: 665px;
     display: flex;
     background-repeat: no-repeat;
@@ -187,6 +191,7 @@ header {
     font-family: 'Lato';
     position: relative;
     margin-top: 224px;
+    max-width: 410px;
 }
 .slider_text, .slider_text-special {
     font-size: 30px;
@@ -208,30 +213,28 @@ header {
     top: 9px;
     left: -24px;
 }
-.hot_deal {
+.hotdeal {
     display: flex;
 }
-.HotDeal_img {
+.hotdeal_img {
     display: block;
 }
-.HotDeal_Left_block {
+.hotdeal_block {
     display: block;
-    margin-right: 10px;
     position: relative;
 }
-.HotDeal_Right_block {
-    display: block;
-    margin-left: 10px;
+.hotdeal_mr-20{
+    margin-right: 20px;
+}
+
+.hotdeal_kids, .hotdeal_accesories {
     position: relative;
 }
-.HotDeal_Kids, .HotDeal_Accesories {
-    position: relative;
-}
-.HotDeal_Men, .HotDeal_Women {
+.hotdeal_men, .hotdeal_women {
     margin-bottom: 20px;
 }
 
-.HotDeal_label_up, .HotDeal_label_down {
+.hotdeal_label_up, .hotdeal_label_down {
     background-color: #fff;
     max-width: 189px;
     position: absolute;
@@ -239,7 +242,7 @@ header {
     padding: 16px 20px;
 }
 
-.HotDeal_Category {
+.hotdeal_category {
     font-size: 18px;
     letter-spacing: 0px;
     color: #222222;
@@ -247,7 +250,7 @@ header {
     font-family: "Lato";
     text-transform: uppercase;
 }
-.HotDeal_Classes {
+.hotdeal_classes {
     font-size: 30px;
     letter-spacing: 0.75px;
     color: #f16d7f;
@@ -774,6 +777,11 @@ header {
     margin-left: 50px;
     line-height: 25px;
 }
+.goods_filters {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .goods_trending {
     width: 185px;
 }    
@@ -803,7 +811,7 @@ header {
     vertical-align: middle;
 }
 .goods_size_value {
-    font-family: 'OpenSans';
+    font-family: 'Lato';
     font-size: 14px;
     color: #6f6e6e;
     display: inline-block;
@@ -860,17 +868,16 @@ header {
     position: absolute;
     right: 0;
 }
-.goods_price_lowest, .nav_filters_price_highest {
-    font-family: 'OpenSans';
-    font-size: 14px;
-    color: #6f6e6e;
-} 
+
 .goods_sorting {
     display: flex;
     width: 100%;
     background-color: #f3f3f3;
     align-items: center;
     margin-top: 40px;
+    color: #6f6e6e;
+    font-family: 'Lato';
+    font-size: 14px;
 }
 
 .goods_sorting_byclass, .goods_sorting_quantity {
@@ -880,8 +887,6 @@ header {
 .goods_sorting_label, .goods_sorting_class {
     border: solid 1px #ebebeb;
     background-color: #ffffff;
-    
-    
 }
 .goods_sorting_label {
     padding: 10px 10px 10px 13px;
@@ -1061,7 +1066,7 @@ header {
     text-transform: uppercase;
 }
 .checkout_item_form {
-    width: 300px;
+    
 }
 
 .checkout_title-toggle {
@@ -1072,9 +1077,10 @@ header {
     display: flex;
     flex-direction: column;
     padding-left: 35px;
-    margin-right: 205px;
 }
-
+.checkout_item_mr-260 {
+    margin-right: 260px;
+}
 .checkout_title-toggle:checked ~ .checkout-wrapper {
     display: flex;
 }
@@ -1239,23 +1245,26 @@ header {
 .collection_buy {
     display: flex;
     flex-direction: row;
-    padding-left: 55px;
+    padding-left: 300px;
     text-align: start;
     padding-bottom: 28px;
     padding-top: 60px;
+    flex-wrap: wrap;
 }
 .collection_buy_item {
-    margin-right: 50px;
-
+    margin-right: 49px;
+    margin-left: 6px;
 }
 .collection_buy_choose {
     width: 144px;
+    height: 22px;
 }
 .collection_buy_title {
     font-family: 'Lato';
     font-size: 14px;
     font-weight: 700;
     color: #2f2f2f;
+    margin-bottom: 15px;
 }
 .collection_buy_choose_text-red {
     width: 12px;
@@ -1276,7 +1285,8 @@ header {
     background-repeat: no-repeat;
     background-position-x: 207px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
+    margin-top: 30px;
 }
 .related_title {
     padding: 120px 0 70px 0;

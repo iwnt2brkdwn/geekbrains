@@ -11,19 +11,17 @@
     <title>Single Page</title>
 </head>
 <body>
-    <header>
-        <div class="header_wraper container">
-            <a href="/">
-            <img src="./img/logo.png" alt="logo">
-            <span class="header_brand">BRAN<span class="orange_letter">D</span></span>    
-            </a>
-            <form class="header_form" action="#">
-                <button class="browse">Browse</button><input type="text" placeholder="Search for item..."><button class="header_loop"></button>
-            </form>
-            <div class="header_buying">
-                <button class="header_cart"><img src="./img/cart.png"></button>
-                <button class="header_acc">My account</button>
-            </div>
+    <header class="header_wraper container">
+        <a class="header_logo_link" href="/">
+        <img class="header_logo_img" src="./img/logo.png" alt="logo">
+        <div class="header_brand_wrapper"> <span class="header_brand">BRAN<span class="orange_letter">D</span></span></div>
+        </a>
+        <form class="header_form" action="#">
+            <button class="browse">Browse</button><input type="text" placeholder="Search for item..."><button class="header_loop"></button>
+        </form>
+        <div class="header_buying">
+            <button class="header_cart"><img src="./img/cart.png"></button>
+            <button class="header_acc">My account</button>
         </div>
     </header>
     <nav class="header_navigation">
@@ -80,9 +78,9 @@
                 <p class="collection_buy_title">CHOOSE SIZE</p>
                 <input type="number" class="collection_buy_quantity" placeholder="2">
             </div>
-            
+            <button class="collection_buy_button">Add to Cart</button>
         </form>
-        <button class="collection_buy_button">Add to Cart</button>
+        
     </div>
     <div class="related container">
         <h1 class="related_title">You may like also</h1>
