@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section style="margin: 0 auto; width: 100px; height: 100px; display: flex; flex-direction: column; justify-content: space-around;">
+        <input type="button" class="work_button" onclick="temperature()" value="Задание 1">
+        <input type="button" class="work_button" onclick="assignment()" value="Задание 2">
+        <input type="button" class="work_button" onclick="summary()" value="Задание 3">
+    </section>
+    <script>
+        'use strict';
+        function temperature(){
+            let celsius = +prompt('Введите температуру в градусах Цельсия');
+            let fahrenheit = (9/5)*celsius+32;
+            alert(celsius + ' градусов Цельсия это ' + fahrenheit + ' градус Фаренгейта'); 
+        }
+
+        function assignment() {
+            let name = 'Василий';
+            let admin = name;
+            console.log (admin);
+        }
+        function summary() {
+            /*
+            1. складываем 2 числа, получаем 20.
+            2. Приводим 20 к строчному значению.
+            3. складываем 2 строчных значения 20 и 10 и получаем 2010
+            4. 2010 присваиваем переменной a.
+            5. Выводим в консоль значение переменной a c помощью console.log  */
+            let a = 10 + 10 + "10";
+            console.log (a);
+            /*
+            1. Приводим первую 10 к строчному значению и складываем с второй 10, получаем 1010
+            2. Приводим третью 10 к строчному значению и складываем с предыдущим результатом получаем 101010
+            3. Присваиваем переменной b значение 101010
+            4. Выводим в консоль значение переменной b c помощью console.log 
+            */
+            let b = 10 + "10" + 10;
+            console.log (b);
+            /*
+            1. Складываем 2 числовых значения и получаем 20.
+            2. Приводим третью 10 к числовому значению.
+            3. Складываем сумму первых 2х числовых значений и третью 10.
+            4. Присваиваем полученный результат переменной c.
+            5. Выводим в консоль значение переменной c c помощью console.log 
+            */
+            let c = 10 + 10 + +"10"; 
+            console.log (c);
+            /*
+            1. Приводим пустую строку к числовому значению и получаем -0.
+            2. Делим 10 на -0 и получаем минус бесконечность.
+            3. Присваиваем получившееся значение переменной d.
+            4. Выводим в консоль значение переменной d c помощью console.log
+            */
+            let d = 10 / -"";
+            console.log (d);
+            /*
+            1. Приводим 2,5 к числовому значению и получаем NaN, т.к в JS дроби пишутся только через точку и данную запись не привести к числовому значению.
+            2. Пытаемся поделить 10 на NaN и получаем NaN.
+            3. Присваеваем переменной e значение NaN.
+            4. Выводим в консоль значение переменной e c помощью console.log
+            */
+            let e = 10 / +"2,5";
+            console.log (e);
+        }
+    </script>    
+        
+</body>
+</html>
