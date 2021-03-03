@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson 2</title>
+</head>
+<body>
+    <input type="button" onclick="mathOperation()" value="mathOperation">
+    <input type="button" onclick="power()" value="pawa">
+    <!-- 
+    1. Дан код:
+    var a = 1, b = 1, c, d;
+    //Префиксная форма записи инкремента увеличивает число на 1 и выводит результат
+    c = ++a; alert(c);        	// 2
+    //Постфиксная форма записи, увеличивает b, но возвращает неувеличенное значение b, которое присваивается переменной d.
+    d = b++; alert(d);  	// 1
+    //Сложение числа 2 и ещё раз инкрементированной переменной a(3)
+    c = (2+ ++a); alert(c);   	 // 5
+    //Очередное постфиксное инкрементирование b, но возвращает старое значение 2
+    d = (2+ b++); alert(d);   	// 4
+    //После 2х префиксных инкрементов стало равно 3
+    alert(a);   	// 3
+    //После 2х постфиксных инкрементов стало равно 3    
+    alert(b);     // 3
+    -->
+    <!--
+        2. Чему будет равен x в примере ниже?
+            var a = 2;
+            //данная запись означает, что нам необходимо переменную а умножить на 2 var x = 1+(2*2) = 5
+            var x = 1 + (a *= 2); 
+    -->
+
+    <script>
+        'use strict';
+        let a = +prompt('Введите любое число');
+        let b = +prompt('Введите любое число');
+        if (a >= 0 & b >=0) {
+            alert(a-b);
+        }
+        else if (a < 0 & b < 0) {
+            alert(a * b);
+        }
+        else if (a === undefined | b === undefined) {
+            alert('Вы не ввели число')
+        }
+        else if (isNaN(a) | isNaN(b)) {
+            alert('Вы ввели не число')
+        }
+        else {
+            alert(a+b);
+        }
+    </script>
+    <script>
+        let a =  Math.round(Math.random() * (16));
+        let b = 15;
+        switch (a) {
+		case 1:
+			console.log ( '1');
+			
+		case 2:
+			console.log ( '2');
+			
+		case 3:
+			console.log ( '3');
+			
+		case 4:
+			console.log ( '4');
+			
+		case 5:
+			console.log ( '5');
+			
+		case 6:
+			console.log ( '6');
+			
+		case 7:
+			console.log ( '7');
+			
+		case 8:
+			console.log ( '8');
+			
+		case 9:
+			console.log ( '9');
+			
+		case 10:
+			console.log ( '10');
+			
+		case 11:
+			console.log ( '11');
+			
+		case 12:
+			console.log ( '12');
+			
+		case 13:
+			console.log ( '13');
+			
+		case 14:
+			console.log ( '14');
+			
+		case 15:
+			console.log ( '15');
+			break;	
+		}	
+    </script>
+    <!--
+        Вариант в котором пользователь вводит значение
+    -->
+    <script>
+		a = +prompt ('Введите число от 1 до 15');
+		switch (a) {
+		case 1:
+			console.log ( '1');
+			
+		case 2:
+			console.log ( '2');
+			
+		case 3:
+			console.log ( '3');
+			
+		case 4:
+			console.log ( '4');
+			
+		case 5:
+			console.log ( '5');
+			
+		case 6:
+			console.log ( '6');
+			
+		case 7:
+			console.log ( '7');
+			
+		case 8:
+			console.log ( '8');
+			
+		case 9:
+			console.log ( '9');
+			
+		case 10:
+			console.log ( '10');
+			
+		case 11:
+			console.log ( '11');
+			
+		case 12:
+			console.log ( '12');
+			
+		case 13:
+			console.log ( '13');
+			
+		case 14:
+			console.log ( '14');
+			
+		case 15:
+			console.log ( '15');
+			break;	
+		}	
+	</script>
+    <script>
+        var a = +prompt('Введите первое число');
+		var b = +prompt('Введите второе число');
+		function plus(a, b) {
+    		return a + b;
+		}
+		function minus(a, b) {
+    		return a - b;
+		}
+		function division (a, b) {
+    		return a / b;
+		}
+		function multiplication (a, b) {
+    		return a * b;
+		}
+        console.log(plus(a,b));
+        console.log(minus(a, b));
+        console.log(division (a, b));
+        console.log(multiplication (a, b));
+	</script>
+    <script>
+        function mathOperation(arg1, arg2, operation){
+    	    arg1 = +prompt('Введите первое число');
+            arg2 = +prompt('Введите второе число');
+            operation = prompt('Введите требуемую операцию')
+            switch(operation){
+       		    case 'сложение':
+           		    return arg1 + arg2;
+           			break;
+       			case 'вычитание':
+           		    return arg1 - arg2;
+            		break;
+        		case 'деление':
+                    return arg1 / arg2;
+            		break;
+       			case 'умножение':
+           		    return arg1 * arg2;
+            		break;
+   			}
+        }
+    </script>
+    <script>
+    //Получаем везде false, кроме последнего сравнения т.к null есть отсутствие значения, а не число, в то время как 0 является детерминированным значением.
+        alert('null > 0 ' + (null > 0));
+        alert('null < 0 ' + (null < 0));
+        alert('null == 0 ' + (null == 0));
+        alert('null != 0 ' + (null != 0));
+    </script>
+    <script>
+       function power(e, n) {
+            if (n != 1) {
+            return e *= power(e,n - 1);
+            } else {
+            return e;
+            }
+        }
+        alert( power(2,5)); 
+    </script>
+</body>
+</html>
